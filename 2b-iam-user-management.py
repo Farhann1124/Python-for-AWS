@@ -7,7 +7,6 @@ iam_client = boto3.client('iam')
 # 2. Edit user
 # 3. Delete user
 
-'''
 # 1. Create user
 print("Creating a user")
 try:
@@ -30,7 +29,7 @@ update_user = iam_client.update_user(
 print('username updated')
 print(update_user)
 
-'''
+
 # 3. Delete a user
 print('Deleting user')
 delete_user = iam_client.delete_user(
