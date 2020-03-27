@@ -3,10 +3,7 @@ import boto3
 
 iam_client = boto3.client('iam')
 
-# This script would get
-# 1. User list(s)
-# 2. Group Details
-# 3. Policy details
+# This script would get IAM users details
 
 # Dictionary to get all iam users
 user_details={}
