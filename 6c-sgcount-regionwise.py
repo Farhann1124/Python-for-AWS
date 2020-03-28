@@ -27,9 +27,9 @@ total_count = 0
 # loop through regions followed by security group loop
 for region in regions:
     ec2 = session.client('ec2', region_name=region)
-    #sgs = ec2.describe_security_groups()
-    #for sg in sgs:
-        #print(sg)
+    sgs = ec2.describe_security_groups()
+    for sg in sgs:
+        print(sg)
     count = 0
     for sg in ec2.describe_security_groups()["SecurityGroups"]:
         count = count + 1
