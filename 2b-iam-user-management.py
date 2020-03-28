@@ -11,7 +11,7 @@ iam_client = boto3.client('iam')
 print("Creating a user")
 try:
     create_user = iam_client.create_user(
-        UserName='Mahesh-Bheema'
+        UserName='Jeff Bernard'
     )
     print("Created a user. Below is the result")
     print(create_user)
@@ -23,8 +23,8 @@ except Exception as e:
 # 2. Edit/Update a user
 print('Updating user name')
 update_user = iam_client.update_user(
-    UserName='Mahesh-Bheema',
-    NewUserName='Jai-Mahesh-Anna'
+    UserName='Jeff Bernard',
+    NewUserName='Bernard Shaw'
 )
 print('username updated')
 print(update_user)
@@ -33,7 +33,7 @@ print(update_user)
 # 3. Delete a user
 print('Deleting user')
 delete_user = iam_client.delete_user(
-    UserName='Jai-Mahesh-Anna'
+    UserName='Bernard Shaw'
 )
 print('user deleted')
 print(delete_user)
