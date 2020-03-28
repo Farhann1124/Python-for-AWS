@@ -1,6 +1,8 @@
 #!/usr/bin/python
 import boto3
 
+# NOTE: This script is not complete yet
+
 ec2_client = boto3.client('ec2')
 
 # Retrieves all regions/endpoints that work with EC2
