@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import boto3
 
+# Setting up iam object
 iam_client = boto3.client('iam')
 attached_user_policies = iam_client.list_attached_user_policies(
     UserName='sanjeev',
